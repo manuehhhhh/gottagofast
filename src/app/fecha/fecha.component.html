@@ -1,0 +1,13 @@
+<div class="date-picker-container">
+    <form [formGroup]="dateForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="checkIn">Fecha de Check-In:</label>
+        <input id="checkIn" formControlName="checkIn" type="date" />
+      </div>
+      <div>
+        <label for="checkOut">Fecha de Check-Out:</label>
+        <input id="checkOut" formControlName="checkOut" type="date" />
+      </div>
+      <button type="submit">Seleccionar Fechas</button>
+    </form>
+  </div>

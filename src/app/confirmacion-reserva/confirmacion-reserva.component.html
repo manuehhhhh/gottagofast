@@ -1,0 +1,8 @@
+<div class="confirmation-container" *ngIf="reservationDetails">
+    <h2>Confirmación de Reserva</h2>
+    <p><strong>Nombre:</strong> {{ reservationDetails.name }}</p>
+    <p><strong>Fecha de Check-In:</strong> {{ reservationDetails.checkIn }}</p>
+    <p><strong>Fecha de Check-Out:</strong> {{ reservationDetails.checkOut }}</p>
+    <p><strong>Habitación:</strong> {{ reservationDetails.room }}</p>
+    <p><strong>Total Pagado:</strong> {{ reservationDetails.total }}</p>
+  </div>

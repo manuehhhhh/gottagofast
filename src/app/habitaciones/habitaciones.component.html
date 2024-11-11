@@ -1,0 +1,4 @@
+<h2>Habitaciones</h2>
+<div *ngFor="let habitacion of habitaciones" (click)="seleccionarHabitacion(habitacion)" [class.seleccionada]="habitacion.seleccionada">
+    {{ habitacion.nombre }}
+  </div>
