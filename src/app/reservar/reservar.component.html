@@ -1,0 +1,37 @@
+<form [formGroup]="dateForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="checkIn">Fecha de Check-In:</label>
+    <input id="checkIn" formControlName="checkIn" type="date" />
+  </div>
+  <div>
+    <label for="checkOut">Fecha de Check-Out:</label>
+    <input id="checkOut" formControlName="checkOut" type="date" />
+  </div>
+
+</form>
+
+<h2>
+  Fecha de inicio
+</h2>
+<input type="text" id="inicio" name="inicio">
+  <h2>
+    Fecha Finallllll
+  </h2>
+<input type="text" id="final" name="trip-final" />
+<h2>
+  Cantidad de Huespedes
+</h2>
+<input type="number" id="huespedes" name="huespedes" min="1" max="5">
+  <h2>
+    Correo
+  </h2>
+<input type="email" id="email" name="email">
+<h2>
+  Tipo de Habitacion
+</h2>
+<select name="tipo" id="tipo">
+    @for (hab of listaTipo(); track hab.id){
+        <option>{{hab.nombre}}</option>
+      }
+    </select>
