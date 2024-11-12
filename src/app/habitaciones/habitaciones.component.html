@@ -1,4 +1,9 @@
 <h2>Habitaciones</h2>
-<div *ngFor="let habitacion of habitaciones" (click)="seleccionarHabitacion(habitacion)" [class.seleccionada]="habitacion.seleccionada">
+@for (hab of lista(); track hab.id){
+  <h2 (click)="seleccionHabitacion($event, hab.numeroHabitacion)">Habitacion: {{hab.numeroHabitacion}} | Tipo de Habitacion {{hab.tipo}}</h2>
+}
+<!-- <div *ngFor="let habitacion of habitaciones" (click)="seleccionarHabitacion(habitacion)" [class.seleccionada]="habitacion.seleccionada">
     {{ habitacion.nombre }}
-  </div>
+  </div> -->
+  <h2>Habitacion seleccionada: {{seleccionada()}} </h2>
+  

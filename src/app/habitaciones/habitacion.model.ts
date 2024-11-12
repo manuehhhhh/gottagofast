@@ -1,6 +1,6 @@
 export interface Habitacion {
-    id: number;
-    nombre: string;
-    seleccionada: boolean;
-    precio: number;
+    id: bigint;
+    numeroHabitacion: number;
+    estado: string;
+    tipo: bigint;
 }
